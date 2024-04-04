@@ -1,7 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 ul{
     list-style: none;
@@ -11,13 +13,115 @@ html,body{
 }
 body{
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 20% 1fr / 1fr 5fr;
 }
 .sidebar{
     height: 100%;
     grid-column: 1 / 2;
-    grid-row: 1 / -1;
-    background-color: aqua;
+    grid-row: 1 / 3;
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 10%  35% 20%;
+    font-weight: 500;
+    color: white;
+    gap: 20px;
 
+}
+svg{
+    height: 15px;
+    fill: white;
+}
+
+.sidebar li{
+    display: grid;
+    grid-template-columns: 22% 1fr;
+    font-size: 12px;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-items: center;
+} 
+.sidebar li > div{
+    justify-self: start;
+}
+.sidebar > div{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    align-items: center;
+    gap: 4px;
+}
+.list1 > h3{
+    justify-self: start;
+    
+}
+.list1 > svg{
+    height: 27px;
+    justify-self: end;
+ 
+}
+
+
+.header{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 37% 1fr;
+    background-color: white;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.header-top{
+   
+    display: grid;
+    grid-template-columns: min-content 1fr min-content min-content auto;
+    align-items: center;
+    gap: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.header-top > img{
+    height: 20px;
+}
+.header-top > input{
+    border-radius: 20px;
+    border: 1px solid #cbd5e1;
+    background-color: #cbd5e1;
+}
+.header-top > svg{
+    fill: black;
+}
+.header-bottom {
+    display: grid;
+    grid-template-columns: min-content 1fr 40% ;
+    align-items: center;
+    gap: 10px;
+    padding: 0 17px;
+    
+}
+.hello{
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.header-bottom > img{
+    height: 30px;
+}
+.header-bottom p{
+    font-weight: 500;
+    font-size: 10px;
+}
+button{
+    padding: 5px 12px;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    border: none;
+    background-color: blue;
+}
+.main{
+ 
 }
 
