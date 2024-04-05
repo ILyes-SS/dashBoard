@@ -156,6 +156,7 @@ button{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    flex: 1;
 
 }
 .card{
@@ -168,7 +169,7 @@ button{
     flex-direction: column;
 }
 .images{
-    margin-top: 15px;
+    margin-top: auto;
     align-self: flex-end;
 }
 .main-right{
@@ -177,7 +178,7 @@ button{
     flex-direction: column;
     padding: 10px;
     gap: 25px;
-    align-items: stretch;
+   
 }
 .Anouncements p{
     font-size: 9px;
@@ -193,8 +194,9 @@ button{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap: 7px;
+    flex: 1;
 }
 .parts:nth-child(1),
 .parts:nth-child(2){
@@ -219,6 +221,8 @@ button{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 1;
+    justify-content: space-evenly;
 }
 .person{
     display: flex;
@@ -235,4 +239,14 @@ button{
     font-weight: 500;
     color: black;
     margin-bottom: 4px;
+}
+.Anouncements {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.Trending{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
